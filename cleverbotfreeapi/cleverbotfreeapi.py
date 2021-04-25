@@ -5,7 +5,6 @@ import re
 cookies = None
 sessions = dict()
 
-
 def cleverbot(stimulus, context=[], session=None):
     global cookies, sessions
     if (cookies is None):
@@ -47,7 +46,6 @@ def cleverbot(stimulus, context=[], session=None):
     if session:
         sessions[session].extend([stimulus, response])
     return response
-
 
 if __name__ == "__main__":
     # With context and session
